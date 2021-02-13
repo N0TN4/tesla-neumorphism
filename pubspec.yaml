@@ -1,0 +1,34 @@
+name: teslaapp
+description: Neumorphism UI
+
+publish_to: 'none'
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+  clay_containers: ^0.2.3
+
+  get: ^3.13.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/Lato-Regular.ttf
+    - family: Gilroy
+      fonts:
+        - asset: assets/Gilroy-Light.ttf

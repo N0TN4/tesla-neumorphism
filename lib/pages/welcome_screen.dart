@@ -3,10 +3,12 @@ import 'dart:async';
 import 'package:clay_containers/clay_containers.dart';
 import 'package:clay_containers/widgets/clay_container.dart';
 import 'package:flutter/material.dart';
+import 'package:teslaapp/components/background_app.dart';
+import 'package:teslaapp/util/constants.dart';
 import 'package:teslaapp/util/size_util.dart';
 
-import 'components/primary_button.dart';
-import 'components/top_bar.dart';
+import '../components/buttons/primary_button.dart';
+import '../components/top_bar.dart';
 
 class WelcomeScreen extends StatefulWidget {
   @override
@@ -14,23 +16,12 @@ class WelcomeScreen extends StatefulWidget {
 }
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
-  Color gradientStart = Color(0xFF353A40);
-  Color gradientEnd = Color(0xFF16171B);
-
   @override
   Widget build(BuildContext context) {
     print("LARGURA: ${MediaQuery.of(context).size}");
 
     return Scaffold(
-      body: Container(
-        decoration: new BoxDecoration(
-          gradient: new LinearGradient(
-            colors: [gradientStart, gradientEnd],
-            begin: const FractionalOffset(0.0, 0.0),
-            end: const FractionalOffset(0.0, 1.0),
-            stops: [0.0, 1.0],
-          ),
-        ),
+      body: BackgroundApp(
         child: Stack(
           children: <Widget>[
             TopBar(),

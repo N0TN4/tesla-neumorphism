@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:neumorphic/neumorphic.dart';
 import 'package:responsive_pixel/responsive_pixel.dart';
-import './welcome_screen.dart';
+import 'package:teslaapp/pages/main_screen/main_screen.dart';
+import 'pages/welcome_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
 
         // visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: WelcomeScreen(),
+      home: MainScreen(),
     );
   }
 }

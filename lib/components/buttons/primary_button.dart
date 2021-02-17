@@ -64,7 +64,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
   }
 
   animationDepth() {
-    periodicSub = new Stream.periodic(const Duration(milliseconds: 3), (v) => v)
+    periodicSub = new Stream.periodic(const Duration(milliseconds: 5), (v) => v)
         .take(60)
         .listen((count) {
       setState(() {
